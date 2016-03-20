@@ -1,6 +1,7 @@
 import numpy as np
 from itertools import product
 import time
+import sys
 
 n = 28
 
@@ -61,6 +62,7 @@ def random_vector_with_replacement(n):
             #print(np.array(A))
         elif len(where)==1:
             A[where[0]] = sample.copy()
+            print("-", end="", flush=True)
             #print(np.array(A).shape)
             #print(np.array(A))
             
